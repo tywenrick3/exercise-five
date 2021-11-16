@@ -7,7 +7,7 @@ function Header() {
 			<nav>
 				<a href='/'>Login</a>
 				<a href='/create'>Create User</a>
-				<a href='/userprofile'>User Profile</a>
+				<a href='/user/id'>User Profile</a>
 			</nav>
 		</header>
 	);
