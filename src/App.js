@@ -1,7 +1,7 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from './pages/Login';
-import CreateUser from './components/CreateUser';
+import CreateUser from './pages/CreateUser';
 import Header from './components/Header';
 import UserProfile from './pages/UserProfile';
 
