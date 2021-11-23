@@ -9,8 +9,6 @@ function CreateUser({ setLoggedIn, setUserInformation }) {
 		const email = e.currentTarget.email.value;
 		const password = e.currentTarget.password.value;
 
-		console.log({ email, password });
-
 		const auth = getAuth();
 
 		createUserWithEmailAndPassword(auth, email, password)
@@ -27,12 +25,12 @@ function CreateUser({ setLoggedIn, setUserInformation }) {
 			.catch((error) => {
 				const errorCode = error.code;
 				const errorMessage = error.message;
-				console.log({ error, errorCode, errorMessage });
+				console.warn({ error, errorCode, errorMessage });
 			});
 	}, []);
 
 	return (
-		<div>
+		<div className='PageWrapper'>
 			<h1>Create User</h1>
 			<CreateUserForm signUpUser={signUpUser} />
 		</div>

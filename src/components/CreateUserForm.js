@@ -2,7 +2,7 @@ import React from 'react';
 
 function CreateUserForm({ signUpUser }) {
 	return (
-		<div>
+		<div className='Form'>
 			<h2>Create User Form</h2>
 			<form onSubmit={(e) => signUpUser(e)}>
 				<label htmlFor='email'>Email</label>
