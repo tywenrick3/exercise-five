@@ -6,7 +6,7 @@ export default (to) => {
 
 	useEffect(() => {
 		navigate(to);
-	});
+	}, []);
 
 	return null;
 };
