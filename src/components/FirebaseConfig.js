@@ -1,4 +1,4 @@
-export default {
+const FirebaseConfig = {
 	apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
 	authDomain: 'exercise-five-3a3ba.firebaseapp.com',
 	projectId: 'exercise-five-3a3ba',
@@ -7,3 +7,5 @@ export default {
 	appId: process.env.REACT_APP_APP_ID,
 	measurementId: process.env.REACT_APP_MEASUREMENT_ID,
 };
+
+export default FirebaseConfig;
