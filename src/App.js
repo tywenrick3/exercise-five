@@ -1,5 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import {
+	Navigate,
+	BrowserRouter as Router,
+	Routes,
+	Route,
+} from 'react-router-dom';
 import { initializeApp } from 'firebase/app';
 import { getAuth, onAuthStateChanged, signOut } from '@firebase/auth';
 // Page Imports
@@ -36,8 +41,8 @@ function App() {
 					setUserInformation({});
 					setLoggedIn(false);
 				}
+				setLoading(false);
 			});
-			setLoading(false);
 		}
 	}, [appInitialized]);
 
@@ -53,7 +58,7 @@ function App() {
 			});
 	}
 
-	if (loading) return null;
+	if (loading || !appInitialized) return null;
 
 	return (
 		<>
