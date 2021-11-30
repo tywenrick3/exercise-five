@@ -14,7 +14,6 @@ import CreateUser from './pages/CreateUser';
 import Header from './components/Header';
 import UserProfile from './pages/UserProfile';
 import FirebaseConfig from './components/FirebaseConfig';
-import Navigate from './utils/Navigate';
 
 function App() {
 	// Track if user is logged in
